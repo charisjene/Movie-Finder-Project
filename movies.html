@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="movies.css">
+    <script src="https://kit.fontawesome.com/d48f5e690c.js" crossorigin="anonymous"></script>
+    <title>Search Titles</title>
+</head>
+<body>
+<nav class="nav__container">
+    <figure class="logo__wrapper">
+      <img src="./assets/fakelogo.png" alt="MovieFinder logo" class="logo" />
+    </figure>
+    <ul class="nav__link--list">
+      <li class="nav__link"><a href="/index.html" class="nav__link--anchor link__hover-effect link__hover-effect--black">Home</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+  <header>
+    <div class="header__content">
+        <div class="header__description">
+            <h1 class="title">MovieFinder</h1>
+                <h4>
+                Search for your favorite <b class="orange">movies</b>, <b class="orange">TV shows</b>, and more.
+                </h4>
+               
+                <form id="search-form" class="s__form">
+                    <input class="s__input" type="text" id="search-input" placeholder=" Search movies..." required />
+                    <button href="#results" type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+                </form>
+                
+        </div>   
+            <figure class="header__img--wrapper">
+                <img src="./assets/undraw_movie-night_pkvp (1).svg" alt="">
+            </figure>
+        </div>
+  </header>
+
+  
+  <section id="results" class="results__container container">
+    <h2 class="section__title">Search Results</h2>
+    <div id="movie-results" class="movie__list">
+      
+    </div>
+  </section>
+
+  
+  <div class="modal" id="movie-modal">
+   <div class="modal__half modal__about">
+  <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+  <h3 class="modal__title">Movie Title</h3>
+  <img id="modal-poster" src="" alt="Movie Poster" class="modal__poster" />
+  <p class="modal__para" id="movie-description">Description will go here...</p>
+</div>
+  </div>
+
+</main>
+  <footer>
+    <div class="container footer__row">
+      <p class="footer__copyright">© 2025 MovieFinder</p>
+    </div>
+  </footer>
+
+
+
+  
+<script src="movies.js"></script>
+</body>
+</html>
