@@ -201,7 +201,10 @@ button:active {
 
 #explore {
     background-color: #e2725b;
+    
 }
+
+
 
 .explore__description {
     display: flex;
@@ -232,6 +235,9 @@ button:active {
   max-width: 1200px; /* Optional: keeps it from stretching too wide */
 }
 
+.movies {
+    padding: 24px;
+}
 
 .movie__list {
   display: grid;
