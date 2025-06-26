@@ -13,6 +13,10 @@ const staffPickIDs = [
     "tt0240515", // Freddy got fingered
 ];
 
+function toggleModal() {
+  modal.classList.remove("show");
+}
+
 async function fetchMovieById(imdbID) {
   const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${imdbID}`);
   const data = await response.json();
@@ -40,9 +44,7 @@ const modalTitle = modal.querySelector(".modal__title");
 const modalPara = modal.querySelector("#movie-description");
 const modalPoster = modal.querySelector("#modal-poster");
 
-function toggleModal() {
-  modal.classList.remove("show");
-}
+
 
 window.showModal = async function(imdbID) {
   try {

@@ -196,9 +196,11 @@ button:active {
     border-color: #dcdfe6;
 }
 
-.s__input:focus{
- border-color: #f06449
+.s__input:focus {
+ border-color: #f06449;
 }
+
+
 
 .search__btn {
   background-color: #f06449;
@@ -234,6 +236,27 @@ button:active {
 .click:active {
     transform: scale(0.0);
 }
+.loading-spinner {
+  text-align: center;
+  font-size: 24px;
+  color: #f06449; 
+  padding: 20px;
+}
+
+.fa-spinner {
+  animation: spinner 750ms infinite linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 /* RESULTS */
 
@@ -243,6 +266,7 @@ button:active {
 
 .results__container {
   padding-top: 24px;
+  background-color: #e2725b;
 }
 
 .section__title {
@@ -255,10 +279,13 @@ button:active {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 24px;
+  padding: 24px 32px; 
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .movie__card {
-  background: white;
+  background: rgb(245, 245, 245);
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -301,7 +328,7 @@ button:active {
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .modal.show {
@@ -318,11 +345,7 @@ button:active {
   width: 100%;
   position: relative;
   text-align: center;
-  z-index: 1000;
-}
-
-.footer__copyright {
-  z-index: 1;
+  z-index: 10000;
 }
 
 
@@ -357,14 +380,23 @@ button:active {
   color: #FFFFFF;
 }
 
+/*
+
+FOOTER
+
+*/
+
 footer {
   background: #242424;
   color: white;
   text-align: center;
   padding: 30px 0;
   margin-top: 60px;
-  z-index: 1;
+  position: relative;
+  z-index: -1;
 }
+
+
 
 
 

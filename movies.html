@@ -31,7 +31,6 @@
                     <input class="s__input" type="text" id="search-input" placeholder=" Search movies..." required />
                     <button href="#results" type="submit" class="search__btn"><i class="fas fa-search"></i></button>
                 </form>
-                
         </div>   
             <figure class="header__img--wrapper">
                 <img src="./assets/undraw_movie-night_pkvp (1).svg" alt="">
@@ -42,8 +41,10 @@
   
   <section id="results" class="results__container container">
     <h2 class="section__title">Search Results</h2>
+    <div id="loading-spinner" class="loading-spinner" style="display: none;">
+    <i class="fas fa-spinner fa-spin"></i> Loading...
+  </div>
     <div id="movie-results" class="movie__list">
-      
     </div>
   </section>
 
