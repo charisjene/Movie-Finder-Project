@@ -238,7 +238,7 @@ button:active {
 }
 .loading-spinner {
   text-align: center;
-  font-size: 24px;
+  font-size: 36px;
   color: white; 
   padding: 20px;
 }
