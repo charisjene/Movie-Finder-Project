@@ -315,6 +315,23 @@ button:active {
   color: #666;
 }
 
+#filter {
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #f06449; /* Border color matching your theme */
+  border-radius: 4px;
+  background-color: #ffffff; /* White background */
+  color: #242424; /* Dark text color for readability */
+  width: 200px; /* Adjust width as needed */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover/focus */
+}
+
+#filter:focus {
+  border-color: #f06449; /* Highlight border on focus */
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 5px rgba(240, 100, 73, 0.5); /* add a glow effect */
+}
 
 
 /* Modal */

@@ -41,9 +41,16 @@
   
   <section id="results" class="results__container container">
     <h2 class="section__title">Search Results</h2>
+  <select id="filter" onchange="filterMovies(event)">
+  <option value="" disabled selected>Sort</option>
+  <option value="NEWEST_TO_OLDEST">Date, Newest to Oldest</option>
+  <option value="OLDEST_TO_NEWEST">Date, Oldest to Newest</option>
+  <option value="RATING">Rating</option>
+</select>
     <div id="loading-spinner" class="loading-spinner" style="display: none;">
     <i class="fas fa-spinner fa-spin"></i>
   </div>
+   
     <div id="movie-results" class="movie__list">
     </div>
   </section>
